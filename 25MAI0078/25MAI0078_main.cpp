@@ -26,18 +26,24 @@
 	//return 0;
 //}
 
-#include "stdio.h"
-#include "omp.h"
-#include "mnudrvprg_030_for_worksharing_construct.h"
+//#include "stdio.h"
+//#include "omp.h"
+//#include "mnudrvprg_030_for_worksharing_construct.h"
 
+//int main() {
+
+//	fn_mnudrvprg_030_for_worksharing_construct();
+
+
+//	return 0;
+//}
+
+#include<stdio.h>
+#include "mnudrvprg_020_runtime_environment_routines.h"
 int main() {
-
-	fn_mnudrvprg_030_for_worksharing_construct();
-
-
+	printf("Menu Driven Program");
+	fn_mnudrvprg_020_runtime_environment_routines();
 	return 0;
 }
-
-
 
 
