@@ -38,12 +38,31 @@
 //	return 0;
 //}
 
-#include<stdio.h>
-#include "mnudrvprg_020_runtime_environment_routines.h"
+//#include<stdio.h>
+//#include "mnudrvprg_020_runtime_environment_routines.h"
+//int main() {
+//	printf("Menu Driven Program");
+//	fn_mnudrvprg_020_runtime_environment_routines();
+//	return 0;
+//}
+
+#include <stdio.h>
+#include "run_time_environment_routines.h"
+
 int main() {
-	printf("Menu Driven Program");
-	fn_mnudrvprg_020_runtime_environment_routines();
+	fn_rter_omp_set_num_threads();
+	fn_rter_omp_get_num_threads();
+	fn_rter_omp_get_max_threads();
+	fn_rter_omp_get_thread_num();
+	fn_rter_omp_get_num_procs();
+	fn_rter_omp_in_parallel();
+	fn_rter_omp_set_dynamic();
+	fn_rter_omp_get_dynamic();
+	fn_rter_omp_set_nested();
+	fn_rter_omp_get_nested();
+
 	return 0;
 }
+
 
 
