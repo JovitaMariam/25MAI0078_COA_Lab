@@ -30,7 +30,7 @@ int fn_mnudrvprg_020_runtime_environment_routines() {
 			fn_ret_tid_hellojovita_srl();
 			break;
 
-		case 4:printf("\nThis is the output of Hello Kaizer parallel program for Thread ID \n");
+		case 4:printf("\nThis is the output of Hello Jovita parallel program for Thread ID \n");
 			fn_ret_tid_hellojovita_prl();
 			break;
 
