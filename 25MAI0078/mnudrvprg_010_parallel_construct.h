@@ -7,19 +7,19 @@ int fn_mnudrvprg_010_parallel_construct() {
 	int choice;
 	while (1) {
 		printf("\n\n------------ Menu Driven Program ------------");
-		printf("\n\n1. Hello Jovita serial program \n");
-		printf("2. Hello Jovita parallel program \n");
+		printf("\n\n1. Hello World serial program \n");
+		printf("2. Hello World parallel program \n");
 		printf("3. Exit \n");
 		printf("Enter Your Choice\n");
 		scanf_s("%d", &choice);
 
 		switch (choice) {
 
-		case 1:printf("\nThis is the output of Hello Jovita serial program \n");
+		case 1:printf("\nThis is the output of Hello World serial program \n");
 			fn_hellojovita_srl();
 			break;
 
-		case 2:printf("\nThis is the output of Hello Jovita parallel program \n");
+		case 2:printf("\nThis is the output of Hello World parallel program \n");
 			fn_hellojovita_prl();
 			break;
 
