@@ -3,14 +3,13 @@
 #include "ret_et_hellojovita.h"
 #include "ret_tid_hellojovita.h"
 
-
 int fn_mnudrvprg_020_runtime_environment_routines() {
 	int choice;
 	while (1) {
 		printf("\n\n------------ Menu Driven Program ------------");
 		printf("\n\n1. Hello Jovita serial program for Runtime Environment Routines \n");
 		printf("2. Hello Jovita parallel program for Runtime Environment Routines \n");
-		printf("3. Hello Jovita parallel program for Thread ID\n");
+		printf("3. Hello Jovita serial program for Thread ID\n");
 		printf("4. Hello Jovita parallel program for Thread ID\n");
 		printf("5. Exit \n");
 		printf("Enter Your Choice\n");
@@ -26,7 +25,7 @@ int fn_mnudrvprg_020_runtime_environment_routines() {
 			fn_ret_et_hellojovita_prl();
 			break;
 
-		case 3:printf("\nThis is the output of Hello Jovita parallel program for Thread ID  \n");
+		case 3:printf("\nThis is the output of Hello Jovita serial program for Thread ID  \n");
 			fn_ret_tid_hellojovita_srl();
 			break;
 
