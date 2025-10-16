@@ -113,41 +113,60 @@
 	//return 0;
 //}
 
+//#include <stdio.h>
+//#include<omp.h>
+//#include "031_wsc_for_num_square.h"
+
+//int main() {
+//	int choice;
+
+//	do {
+//		printf("\n==============================\n");
+//		printf("Menu: Number Square using Work-Sharing Construct (OMP)\n");
+//		printf("==============================\n");
+//		printf("1. Serial Execution\n");
+//		printf("2. Parallel Execution\n");
+//		printf("3. Compare Execution Time, Speedup, and Efficiency\n");
+//		printf("4. Exit\n");
+//		printf("Enter your choice: ");
+//		scanf_s("%d", &choice);
+
+//		switch (choice) {
+//		case 1:
+//			fn_num_square_srl();
+//			break;
+//		case 2:
+//			fn_num_square_prl();
+//			break;
+//		case 3:
+//			fn_num_square_speedup_efficiency();
+//			break;
+//		case 4:
+//			printf("Exiting program...\n");
+//			break;
+//		default:
+//			printf("Invalid choice. Please enter 1–4.\n");
+//		}
+//	} while (choice != 4);
+
+//	return 0;
+//}
+
 #include <stdio.h>
-#include<omp.h>
-#include "031_wsc_for_num_square.h"
-
-int main() {
-	int choice;
-
-	do {
-		printf("\n==============================\n");
-		printf("Menu: Number Square using Work-Sharing Construct (OMP)\n");
-		printf("==============================\n");
-		printf("1. Serial Execution\n");
-		printf("2. Parallel Execution\n");
-		printf("3. Compare Execution Time, Speedup, and Efficiency\n");
-		printf("4. Exit\n");
-		printf("Enter your choice: ");
-		scanf_s("%d", &choice);
-
-		switch (choice) {
-		case 1:
-			fn_num_square_srl();
-			break;
-		case 2:
-			fn_num_square_prl();
-			break;
-		case 3:
-			fn_num_square_speedup_efficiency();
-			break;
-		case 4:
-			printf("Exiting program...\n");
-			break;
-		default:
-			printf("Invalid choice. Please enter 1–4.\n");
-		}
-	} while (choice != 4);
-
+#include "050_Scheduling_Static.h"
+#include "050_Scheduling_Dynamic.h"
+#include "050_Scheduling_Guided.h"
+int main()
+{
+	fn_default_Static_Scheduling();
+	fn_static_01();
+	fn_static_02();
+	fn_default_Dynamic_Scheduling();
+	fn_dynamic_01();
+	fn_dynamic_02();
+	fn_default_Guided_Scheduling();
+	fn_guided_uneven();
+	fn_guided_01();
+	fn_guided_02();
 	return 0;
 }
